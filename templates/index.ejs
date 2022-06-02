@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Final Project</title>
+    <link href="/styles.css" rel="stylesheet" type="text/css">
+  </head>
+  
+  </style>
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a class="active" href="#dashboard">Dashboard</a>
+      <a href="#tasks">My Tasks</a>
+      <a href="#program">Create program</a>
+    </div>
+
+    <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
+      >&#9776;</span>
+
+    
+    <table border='1'>
+      <th>Completed</th>
+      <th>Task</th>
+      <th>Responsible</th>
+      <th>Other</th>
+      <tr>
+        <td><input type="checkbox" /></td>
+        <td>Sign Contracts</td>
+        <td>James Peters</td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" /></td>
+        <td>Grant email access</td>
+        <td>Eric Daniels</td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" /></td>
+        <td>Introduce Manager</td>
+        <td>Andrea Hunter</td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" /></td>
+        <td>Send company swag</td>
+        <td>Andrea Hunter</td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" /></td>
+        <td>SWE Intro</td>
+        <td>Eric Daniels</td>
+        <td>None</td>
+      </tr>
+    </table> 
+
+    <form method="post" action="/addEmployee">
+      <input type="submit" value="Add new employee" />
+    </form>
+    <form method="post" action="/addTask">
+      <input type="submit" value="Add new task" />
+    </form>
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+
+      /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+      }
+    </script>
+  </body>
+</html>

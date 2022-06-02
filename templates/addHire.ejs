@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Add New Hire</title>
+</head>
+
+<body>
+	<h1>New Employee - save their key details</h1>
+    <br>
+    <form action="/processActivity" method="post" onsubmit="return confirm('Are you sure you want to add this employee?');">
+    <fieldset>
+        <legend>Add a new hire</legend>
+        <strong>Employee name: </strong><input type="text" name='name'>
+        <br><br>
+        <strong>Job title: </strong> <input type='text' name='title'>
+        <br><br>
+        <strong>Team/Org: </strong> <input type='text' name='team'>
+        <br><br>
+        <strong>Hiring Manager: </strong> <input type='text' name='manager'>
+        <br><br>
+        <strong>Start date: </strong> <input type="date" value="2022-05-31">
+        <br><br>
+    </fieldset>
+    <input type='reset'>
+    <input type='submit' value='Add Employee'>
+    </form>
+    <br>
+    <hr>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Add New Task</title>
+</head>
+
+<body>
+	<h1>New Task - save the task instructions</h1>
+    <br>
+    <form action="/processTask" method="post" onsubmit="return confirm('Are you sure you want to add this employee?');">
+    <fieldset>
+        <legend>Add a new task</legend>
+        <strong>Task name: </strong><input type="text" name='name'>
+        <br><br>
+        <strong>Responsible: </strong> <input type='text' name='responsible'>
+        <br><br>
+        <strong>Others?: </strong> <input type='text' name='others'>
+        <br><br>
+        <strong>Calendar Event?</strong><input type='text' name='cal' placeholder="Yes or No">
+        <br><br>
+    </fieldset>
+    <input type='reset'>
+    <input type='submit' value='Add Task'>
+    </form>
+    <br>
+    <hr>
+</body>
+</html>
